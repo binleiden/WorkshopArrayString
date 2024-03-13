@@ -24,7 +24,7 @@ public class NameRepository {
 
     //Should completely empty array
     public static void clear() {
-        Arrays.fill(names, null);
+       names = new String[names.length];
     }
 
     //Returns all names in a new array
