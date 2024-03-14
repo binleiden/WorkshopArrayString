@@ -1,0 +1,25 @@
+Index: src/main/java/se/lexicon/NameRepository.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package se.lexicon;\n\n\nimport javax.naming.Name;\nimport java.util.Arrays;\nimport java.util.Scanner;\n\npublic class NameRepository {\n    static String[] names = {\"Daniel Petersson\", \"Olle Olsson\"};\n\n\n    //Names array\n//Return number of elements i the array\n    public static int getSize() {\n        int arrayLength = names.length;\n        return arrayLength;\n    }\n\n    //Sends in an array that set the private static array, This should replace all existing names.\n    public static void setNames(String[] names) {\n        NameRepository.names = names;\n\n    }\n\n    //Should completely empty array\n    public static void clear() {\n       names = new String[names.length];\n    }\n\n    //Returns all names in a new array\n    public static String[] findAll() {\n        String[] addName = Arrays.copyOf(names, names.length);\n        return addName;\n    }\n\n    //Returns name if found and null if not found\n    public static String find(String findName) {\n        for (String element : names) {\n            if (findName.equalsIgnoreCase(element)) {\n                System.out.println(\"Match found: \" + element);\n                return element;\n            }\n        }\n        System.out.println(\"No match found\");\n        return null;\n    }\n\n    //Should add a new name to the array. Returns true when name was added and false when the array contains the name.\n    public static boolean add(final String fullName) {\n        //todo check if name exist\n        if (find(fullName) != null) {\n            return false;\n        }\n\n        //todo add name to array if true\n        String[] addName = Arrays.copyOf(names, names.length + 1);\n        addName[addName.length - 1] = fullName;\n        names = addName;\n        return true;\n\n    }\n}\n\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/se/lexicon/NameRepository.java b/src/main/java/se/lexicon/NameRepository.java
+--- a/src/main/java/se/lexicon/NameRepository.java	(revision 0f7859f18b740b75362b1e551f81dd741f6dc50d)
++++ b/src/main/java/se/lexicon/NameRepository.java	(date 1710405661012)
+@@ -47,12 +47,12 @@
+ 
+     //Should add a new name to the array. Returns true when name was added and false when the array contains the name.
+     public static boolean add(final String fullName) {
+-        //todo check if name exist
++
+         if (find(fullName) != null) {
+             return false;
+         }
+ 
+-        //todo add name to array if true
++
+         String[] addName = Arrays.copyOf(names, names.length + 1);
+         addName[addName.length - 1] = fullName;
+         names = addName;

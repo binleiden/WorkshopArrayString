@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8627a8b4-c20a-4a67-a489-76885e824d2e" name="Changes" comment="New class" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Part1&amp;2" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2dcpaGNLjRtSTgfSUGANxYeQBhF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.App.executor": "Run",
+    "Application.NameRepository.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/daniel/Documents/ideaProjects/WorkshopArrayString"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="se.lexicon.App" />
+      <module name="WorkshopArrayString" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="se.lexicon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NameRepository" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="se.lexicon.NameRepository" />
+      <module name="WorkshopArrayString" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="se.lexicon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.NameRepository" />
+        <item itemvalue="Application.App" />
+        <item itemvalue="Application.NameRepository" />
+        <item itemvalue="Application.App" />
+        <item itemvalue="Application.NameRepository" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-corretto-17.0.9-4caba194b151-3c5dfc45" />
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-78a6f59c" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8627a8b4-c20a-4a67-a489-76885e824d2e" name="Changes" comment="" />
+      <created>1710317285180</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1710317285180</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Added methods and todos.">
+      <option name="closed" value="true" />
+      <created>1710337126523</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1710337126523</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Changed Array.fill() method to reinitialization">
+      <option name="closed" value="true" />
+      <created>1710337616874</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1710337616874</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Improved getSize method. Formated code and removed todo.">
+      <option name="closed" value="true" />
+      <created>1710405634960</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1710405634961</updated>
+    </task>
+    <task id="LOCAL-00004" summary="New class">
+      <option name="closed" value="true" />
+      <created>1710405723501</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1710405723501</updated>
+    </task>
+    <task id="LOCAL-00005" summary="New class">
+      <option name="closed" value="true" />
+      <created>1710405734443</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1710405734443</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added methods and todos." />
+    <MESSAGE value="Changed Array.fill() method to reinitialization" />
+    <MESSAGE value="Improved getSize method. Formated code and removed todo." />
+    <MESSAGE value="New class" />
+    <option name="LAST_COMMIT_MESSAGE" value="New class" />
+  </component>
+</project>
