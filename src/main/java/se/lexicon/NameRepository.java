@@ -12,8 +12,7 @@ public class NameRepository {
     //Names array
 //Return number of elements i the array
     public static int getSize() {
-        int arrayLength = names.length;
-        return arrayLength;
+        return names.length;
     }
 
     //Sends in an array that set the private static array, This should replace all existing names.
@@ -24,7 +23,7 @@ public class NameRepository {
 
     //Should completely empty array
     public static void clear() {
-       names = new String[names.length];
+        names = new String[names.length];
     }
 
     //Returns all names in a new array
@@ -47,12 +46,11 @@ public class NameRepository {
 
     //Should add a new name to the array. Returns true when name was added and false when the array contains the name.
     public static boolean add(final String fullName) {
-        //todo check if name exist
+
         if (find(fullName) != null) {
             return false;
         }
 
-        //todo add name to array if true
         String[] addName = Arrays.copyOf(names, names.length + 1);
         addName[addName.length - 1] = fullName;
         names = addName;
