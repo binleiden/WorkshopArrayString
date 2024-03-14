@@ -1,5 +1,8 @@
 package se.lexicon;
 
+
+
+
 import javax.naming.Name;
 import java.util.Arrays;
 
@@ -10,14 +13,13 @@ import java.util.Arrays;
 public class App 
 {
     public static void main(String[] args) {
-       String[] arr = {"daniel", "Stefan", "emmelie","olle"};
-        System.out.println(NameRepository.getSize());
-        NameRepository.findAll();
-        NameRepository.setNames(arr);
-        //System.out.println(NameRepository.getSize());
-        //NameRepository.findAll();
-        NameRepository.add("leif");
-        System.out.println(Arrays.toString(NameRepository.findAll()));
-        System.out.println(NameRepository.getSize());
+       //Usage of methods
+
+       //Create Array and add names. Return size of Array
+       String[] namesArray = {"Daniel Petersson", "Stefan Stefansson", "Emelie Emeliesson","Olle Ollson", "Daniel Klasson"};
+       NameRepository.setNames(namesArray);
+       System.out.println("The number of elements in the arrey are: " +NameRepository.getSize());
+
+
     }
 }
