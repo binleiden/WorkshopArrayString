@@ -25,14 +25,14 @@ public class NameRepository {
 
     //Should completely empty array
     public static void clear() {
-
-        names = new String[names.length];
+        names = new String[0];
     }
 
     //Returns all names in a new array
     public static String[] findAll() {
-
+        System.out.println(Arrays.toString(names));
         return names = Arrays.copyOf(names, names.length);
+
     }
     //End Part 1
 
@@ -58,8 +58,9 @@ public class NameRepository {
         }
 
         String[] addName = Arrays.copyOf(names, names.length + 1);
-        addName[addName.length - 1] = fullName;
+        addName[addName.length -1] = fullName;
         names = addName;
+        System.out.println(Arrays.toString(names));
         return true; //return true as the name is added successfully
 
     }
@@ -72,7 +73,7 @@ public class NameRepository {
         String[] matches = new String[0];//new string to hold matching names
         for (String fullName : names) {
             String[] parts = fullName.split(" ");
-            if (parts[0].equals(firstName)) {
+            if (parts[0].equalsIgnoreCase(firstName)) {
                 matches = Arrays.copyOf(matches, matches.length + 1);
                 matches[matches.length - 1] = firstName;
             }
@@ -87,7 +88,7 @@ public class NameRepository {
         String[] matches = new String[0];//new string to hold matching names
         for (String fullName : names) {
             String[] parts = fullName.split(" ");
-            if (parts[1].equals(lastName)) {
+            if (parts[1].equalsIgnoreCase(lastName)) {
                 matches = Arrays.copyOf(matches, matches.length + 1);
                 matches[matches.length - 1] = lastName;
             }
@@ -101,13 +102,14 @@ public class NameRepository {
     // existing name matching the updatedName already exists.
     public static boolean update(final String original, final String updatedName) {
         for (int i = 0; i < names.length; i++) {
-            if (names[i].equals(original)) {
+            if (names[i].equalsIgnoreCase(original)) {
                 for (int j = 0; j < names.length; j++) {
                     if (j != i && names[j].equals(updatedName)) {
-                        return false; // An existing name matches the updatedName
+                        return false; // Name matches the updatedName
                     }
                 }
                 names[i] = updatedName;
+                System.out.println(Arrays.toString(names));
                 return true; // Name updated successfully
             }
         }
@@ -121,15 +123,22 @@ public class NameRepository {
     //Should remove a name from the array. Returns true if name was removed and false if the name was not
     //removed for some reason.
     public static boolean remove(final String fullName) {
-        //todo: search for name
+            if (find(fullName) == null) {
+            return false; //return false if the array already includes the name
+        }
 
-        //Todo: if name found return false
+        String[] removeName = new String[names.length-1];
+        int index = -1; //index to store matching name
+        for (int i = 0; i < names.length; i++) {
+            if (names[i].equalsIgnoreCase(fullName)) {
+                removeName[i++] = names[i];
 
-        //todo: if name found remove name. and return true
-
+            }
+        }
+        names = removeName;
+        return true; //return true name removed successfully
 
         }
-    }
 }
 
 //End of part 4
