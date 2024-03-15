@@ -3,6 +3,7 @@ package se.lexicon;
 
 import javax.naming.Name;
 import javax.xml.crypto.dsig.spec.XSLTTransformParameterSpec;
+import java.sql.SQLOutput;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -54,11 +55,12 @@ public class NameRepository {
     public static boolean add(final String fullName) {
 
         if (find(fullName) != null) {
+            System.out.println("Person allready exist cannot add");
             return false; //return false if the array already includes the name
         }
 
         String[] addName = Arrays.copyOf(names, names.length + 1);
-        addName[addName.length -1] = fullName;
+        addName[addName.length - 1] = fullName;
         names = addName;
         System.out.println(Arrays.toString(names));
         return true; //return true as the name is added successfully
@@ -75,7 +77,7 @@ public class NameRepository {
             String[] parts = fullName.split(" ");
             if (parts[0].equalsIgnoreCase(firstName)) {
                 matches = Arrays.copyOf(matches, matches.length + 1);
-                matches[matches.length - 1] = firstName;
+                matches[matches.length - 1] = fullName;
             }
         }
         return matches;
@@ -90,7 +92,7 @@ public class NameRepository {
             String[] parts = fullName.split(" ");
             if (parts[1].equalsIgnoreCase(lastName)) {
                 matches = Arrays.copyOf(matches, matches.length + 1);
-                matches[matches.length - 1] = lastName;
+                matches[matches.length - 1] = fullName;
             }
         }
         return matches;
@@ -109,7 +111,7 @@ public class NameRepository {
                     }
                 }
                 names[i] = updatedName;
-                System.out.println(Arrays.toString(names));
+                printNames();
                 return true; // Name updated successfully
             }
         }
@@ -123,22 +125,32 @@ public class NameRepository {
     //Should remove a name from the array. Returns true if name was removed and false if the name was not
     //removed for some reason.
     public static boolean remove(final String fullName) {
-            if (find(fullName) == null) {
+        if (find(fullName) == null) {
             return false; //return false if the array already includes the name
         }
 
-        String[] removeName = new String[names.length-1];
-        int index = -1; //index to store matching name
+        String[] removeName = new String[names.length - 1];
+        int index = 0; //index to store matching name
         for (int i = 0; i < names.length; i++) {
-            if (names[i].equalsIgnoreCase(fullName)) {
-                removeName[i++] = names[i];
+            if (!names[i].equalsIgnoreCase(fullName)) {
+                removeName[index++] = names[i];
 
             }
         }
         names = removeName;
+        printNames();
         return true; //return true name removed successfully
 
+    }
+
+    public static void printNames() {
+        System.out.println("Uppdated array: ");
+        for (String name : names) {
+            if (name != null) {
+                System.out.println(name);
+            }
         }
+    }
 }
 
 //End of part 4

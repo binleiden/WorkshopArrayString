@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8627a8b4-c20a-4a67-a489-76885e824d2e" name="Changes" comment="Finished part 3.">
+    <list default="true" id="8627a8b4-c20a-4a67-a489-76885e824d2e" name="Changes" comment="Finished part 4. And changed clearing method.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/NameRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/NameRepository.java" afterDir="false" />
@@ -50,7 +50,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "Part3&&4",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/daniel/Documents/ideaProjects/ArrayUdemy"
+    "last_opened_file_path": "/home/daniel/Documents/Repos/g46-array-workshop"
   }
 }]]></component>
   <component name="RunManager" selected="Application.App">
@@ -184,7 +184,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710425431734</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Finished part 4. And changed clearing method.">
+      <option name="closed" value="true" />
+      <created>1710497153529</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1710497153529</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -219,6 +227,7 @@
     <MESSAGE value="Methods for searching first and lastname." />
     <MESSAGE value="Finished part 3 and 4.&#10;Added comments and formated code." />
     <MESSAGE value="Finished part 3." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished part 3." />
+    <MESSAGE value="Finished part 4. And changed clearing method." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished part 4. And changed clearing method." />
   </component>
 </project>
