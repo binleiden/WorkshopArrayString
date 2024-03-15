@@ -23,6 +23,7 @@ public class NameRepository {
     //Should completely empty array
     public static void clear() {
         names = new String[0];
+
     }
 
     //Returns all names in a new array

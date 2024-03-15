@@ -1,5 +1,6 @@
 package se.lexicon;
 
+ Part3 4
 import java.util.Arrays;
 
 public class Console {
@@ -33,4 +34,7 @@ public class Console {
         //Removing element from array
         boolean remove = NameRepository.remove("Elvis Elvisson");
     }
+
+public class Console {
+
 }
