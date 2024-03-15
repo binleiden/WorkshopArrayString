@@ -1,6 +1,10 @@
 package se.lexicon;
 
+
+
+
 import javax.naming.Name;
+import java.sql.SQLOutput;
 import java.util.Arrays;
 
 /**
@@ -10,14 +14,6 @@ import java.util.Arrays;
 public class App 
 {
     public static void main(String[] args) {
-       String[] arr = {"daniel", "Stefan", "emmelie","olle"};
-        System.out.println(NameRepository.getSize());
-        NameRepository.findAll();
-        NameRepository.setNames(arr);
-        //System.out.println(NameRepository.getSize());
-        //NameRepository.findAll();
-        NameRepository.add("leif");
-        System.out.println(Arrays.toString(NameRepository.findAll()));
-        System.out.println(NameRepository.getSize());
+        System.out.println("Go to console class to try out all the methods!");
     }
 }
