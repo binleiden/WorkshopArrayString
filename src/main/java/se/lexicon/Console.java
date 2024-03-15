@@ -27,9 +27,9 @@ public class Console {
         System.out.println("Find name 'Evald Evaldsson': " + NameRepository.find("Evald Evaldsson"));
         System.out.println("Find firstname 'Evald': " + Arrays.toString(NameRepository.findByFirstName("evald")));
         System.out.println("Find lastname 'Larsson': " + Arrays.toString(NameRepository.findByLastName("Larsson")));
-        //Uppdating element from array
+        //Updating element from array
         System.out.println("All names before uppdate: " + Arrays.toString(NameRepository.findAll()));
-        boolean uppdate = NameRepository.update("Evald Evaldsson", "Elvis Elvisson");
+        boolean update = NameRepository.update("Evald Evaldsson", "Elvis Elvisson");
         //Removing element from array
         boolean remove = NameRepository.remove("Elvis Elvisson");
     }
